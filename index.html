@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Comunicador Assistivo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🗣️ Comunicador Assistivo</h1>
+
+  <div class="categorias">
+    <button class="btn amarelo" onclick="abrirFrases('higiene')">1. 🧼 Higiene</button>
+    <button class="btn vermelho" onclick="abrirFrases('alimentacao')">2. 🍽️ Alimentação</button>
+    <button class="btn azul" onclick="abrirFrases('atividades')">3. 🎮 Atividades</button>
+    <button class="btn verde" onclick="abrirFrases('emocoes')">4. 💚 Emoções</button>
+    <button class="btn roxo" onclick="abrirFrases('remedios')">5. 💊 Remédios</button>
+  </div>
+
+  <div id="frases" class="frases"></div>
+
+  <div id="teclado" class="teclado">
+    <input type="text" id="campoFrase" placeholder="Digite sua frase aqui..." oninput="sugerir()">
+    <div id="sugestoes"></div>
+    <button onclick="falarTextoDigitado()">🔊 Falar</button>
+  </div>
+
+  <footer>
+    Todos os direitos reservados – TR Grilo<br>
+    Queremos te ajudar a melhorar ainda mais a comunicação!<br>
+    Personalizações pelo WhatsApp: <a href="https://wa.me/5524999537779" target="_blank">24 99953-7779</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto;
+  gap: 25px;
+  max-width: 90%;
+}
+
+.frases {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+.btn, .frases button {
+  font-size: 24px;
+  padding: 30px 40px;
+  border: none;
+  border-radius: 20px;
+  width: 250px;
+  height: 120px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.btn:hover, .frases button:hover {
+  transform: scale(1.05);
+}
+
+.amarelo { background-color: #f1c40f; }
+.vermelho { background-color: #e74c3c; }
+.azul    { background-color: #3498db; }
+.verde   { background-color: #2ecc71; }
+.roxo    { background-color: #9b59b6; }
+
+.frases button {
+  background-color: #ffffff;
+  color: #333;
+  font-weight: bold;
+  border: 3px solid #ccc;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid #bbb;
+}
+
+#campoFrase {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  font-size: 26px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.teclado button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#sugestoes {
+  margin: 10px auto;
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+#sugestoes span {
+  background: #eee;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+
+.cinza {
+  background-color: #7f8c8d;
+}
